@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+    <style>
+      @font-face {
+        font-family: "BookkMyungjo";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2")
+          format("woff2");
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "BookkMyungjo";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2")
+          format("woff2");
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "BookkMyungjo";
+      }
+
+      header,
+      nav,
+      main,
+      section,
+      article,
+      aside,
+      footer {
+        padding: 20px;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1;
+      }
+
+      header {
+        background-color: white;
+        text-align: center;
+        display: flex;
+        gap: 10px;
+        margin-left: 30px;
+      }
+
+      header a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      input[type="search"] {
+        width: 50%;
+        margin-left: 30px;
+        border-radius: 20px;
+        border: 2px solid #333;
+      }
+
+      input::placeholder {
+        color: black;
+        font-size: 1.15rem;
+      }
+
+      nav {
+        background-color: #333;
+        color: white;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 50px;
+        justify-content: center;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: rgb(194, 100, 178);
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 20px;
+        padding: 20px;
+        background-color: white;
+      }
+
+      section {
+        background-color: rgb(245, 245, 234);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+      }
+
+      article {
+        margin-bottom: 20px;
+        line-height: 1.4;
+      }
+
+      article h2 {
+        margin-bottom: 20px;
+      }
+
+      aside {
+        background-color: white;
+        height: 50%;
+        padding: 20px;
+        border: 2px solid #333;
+        border-radius: 15px;
+        box-shadow: 0px 0px 4px rgb(0, 0, 0, 0.5);
+        text-align: center;
+      }
+
+      aside>h3{
+        font-weight: bold;
+        font-size: 1.8rem;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      footer p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1><a href="/Website.html">Website</a></h1>
+        <p>웹사이트 만들기</p>
+      </div>
+      <input type="search" id="search" placeholder="검색어를 입력하세요." />
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/Website.html">홈</a></li>
+        <li><a href="/이력서.html">이력서</a></li>
+        <li><a href="/자주가는.html">나만의 웹사이트</a></li>
+        <li><a href="/연락처.html">연락처</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <article>
+          <h2>첫번째 소개글</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+            eligendi doloribus totam labore rem cumque accusamus ab itaque
+            necessitatibus aliquid similique quisquam hic, vero dolore dolor
+            velit? Quos, sint in.
+          </p>
+        </article>
+        <article>
+          <h2>두번째 소개글</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+            quibusdam voluptas error repudiandae recusandae! Quidem deleniti quo
+            distinctio vitae eaque alias velit necessitatibus libero, sapiente
+            suscipit est nobis quisquam? Officia?
+          </p>
+        </article>
+        <article>
+          <h2>세번째 소개글</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+            sint nulla quos molestias similique nam aspernatur nemo,
+            consequuntur sapiente officiis inventore quia accusamus nostrum
+            ratione omnis atque necessitatibus ducimus sunt.
+          </p>
+        </article>
+        <article>
+          <h2>네번째 소개글</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
+            sint nulla quos molestias similique nam aspernatur nemo,
+            consequuntur sapiente officiis inventore quia accusamus nostrum
+            ratione omnis atque necessitatibus ducimus sunt.
+          </p>
+        </article>
+      </section>
+      <aside>
+        <h3>광고</h3>
+        <p>광고 관련 문의<p></p><a href="tel:010-1111-1111">010-1111-1111</a></p></p>
+      </aside>
+    </main>
+    <footer>
+      <p>Copyright &copy; 2025 My Website</p>
+    </footer>
+  </body>
+</html>
